@@ -8,12 +8,13 @@
       "installGradle": false
     }
   },
-  "postCreateCommand": "pip install pyspark pyarrow",
+  "postCreateCommand": "pip install pyspark pyarrow jupyter pandas",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python"
