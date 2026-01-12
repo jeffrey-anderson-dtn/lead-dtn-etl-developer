@@ -12,6 +12,8 @@ You are tasked with building a PySpark ETL pipeline that processes agriculture c
 
 - This is a live, screen-shared assessment
 - You may use any tools, including AI assistants (Copilot, ChatGPT, etc.)
+- You must share your entire screen
+- You may not use any other computers, phones, tablets, or other electronic devices while completing the assignment
 - Please think aloud as you work — we want to understand your approach
 - Be prepared to explain your decisions and debug any issues
 
@@ -63,6 +65,9 @@ County-level crop abandonment rates, partitioned by `harvest_year`.
 Implement appropriate data quality checks and handle issues such as:
 - Missing or null values
 - Invalid data ranges
+  - Percentages must be 0 .. 100
+  - Area and yields cannot be negative
+  - Planted area cannot exceed land_area
 - Duplicate records
 - Referential integrity between datasets
 
