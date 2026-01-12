@@ -8,7 +8,7 @@
       "installGradle": false
     }
   },
-  "postCreateCommand": "pip install pyspark pyarrow jupyter pandas",
+  "postCreateCommand": "pip install pyspark pyarrow jupyter pandas great-expectations",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,10 +17,12 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python"
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "workbench.startupEditor": "none"
       }
     }
   },
+  "postStartCommand": "code etl_solution.ipynb",
   "forwardPorts": [4040],
   "portsAttributes": {
     "4040": {
