@@ -135,12 +135,15 @@ python verify_setup.py
 
 ```bash
 # Requires Java 8/11/17 installed
-pip install pyspark pyarrow
+pip install pyspark pyarrow jupyter pandas great-expectations
 
 # Verify setup (data is already in the repo)
 python verify_setup.py
 
-# Run your solution
+# Open the starter notebook
+jupyter notebook etl_solution.ipynb
+
+# Or run as a script
 spark-submit your_solution.py
 ```
 
