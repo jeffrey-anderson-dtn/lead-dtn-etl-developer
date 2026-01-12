@@ -1,0 +1,37 @@
+# Solution files - DO NOT COMMIT TO CANDIDATE REPO
+solution/
+
+# Evaluation rubric - keep separate from candidate materials
+EVALUATION_RUBRIC.md
+
+# Output files from candidate solutions
+output/
+
+# Output files
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.eggs/
+*.egg-info/
+*.egg
+
+# Spark
+*.log
+spark-warehouse/
+metastore_db/
+derby.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
