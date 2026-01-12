@@ -8,7 +8,7 @@
       "installGradle": false
     }
   },
-  "postCreateCommand": "pip install pyspark pyarrow && python generate_data.py",
+  "postCreateCommand": "pip install pyspark pyarrow",
   "customizations": {
     "vscode": {
       "extensions": [
