@@ -126,7 +126,11 @@ Click the green "Code" button → "Codespaces" → "Create codespace on main"
 
 The environment will automatically install Java, PySpark, and PyArrow. Test data is pre-generated in the `data/` directory.
 
-Once ready (~2 minutes), verify your setup:
+Once ready (~2-4 minutes), the starter notebook (`etl_solution.ipynb`) will open automatically.
+
+When prompted to select a kernel, choose the Python environment (`.venv`). PySpark runs as a Python library, not a separate kernel.
+
+To verify your setup:
 ```bash
 python verify_setup.py
 ```

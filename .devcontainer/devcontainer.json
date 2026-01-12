@@ -8,7 +8,7 @@
       "installGradle": false
     }
   },
-  "postCreateCommand": "pip install pyspark pyarrow jupyter pandas great-expectations",
+  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install pyspark pyarrow jupyter pandas great-expectations",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,7 +17,9 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "jupyter.notebookFileRoot": "${workspaceFolder}",
         "workbench.startupEditor": "none"
       }
     }
